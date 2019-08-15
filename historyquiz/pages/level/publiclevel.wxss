@@ -1,0 +1,180 @@
+/* pages/mission/1/1.wxss */
+
+.container {
+  width: 750rpx;
+  height: 100%;
+
+  overflow: hidden;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+}
+
+.top_padding {
+  width: 100%;
+  height: 9.830508%;
+}
+
+.bottom_padding {
+  width: 100%;
+  height: 6.864407%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tips_container {
+  width: 100%;
+  height: 9.830508%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+}
+
+.tips {
+  position: relative;
+  top: 15rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.submit_button_container {
+  width: 100%;
+  height: 6.864407%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.submit_button {
+  width: 206rpx;
+  height: 74rpx;
+}
+
+.box_container {
+  width: 100%;
+  height: 83.389831%;
+  display: flex;
+  align-items: center;
+}
+
+.ques_container {
+  height: 91.971545%;
+  width: 565rpx;
+  box-sizing: border-box;
+  background-color: #a19287;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 15rpx 15rpx #707070;
+}
+
+.ques {
+  position: relative;
+  width: 509rpx;
+  height: 88.729282%;
+  background-color: #cbb9ab;
+  top: 17rpx;
+  left: 15rpx;
+  box-shadow: 16rpx 16rpx #b64535;
+  box-sizing: border-box;
+  padding: 43rpx;
+}
+
+.q_container {
+  width: 100%;
+  height: 52%;
+  overflow: auto;
+}
+
+.qtitle {
+  font-size: 30rpx;
+  font-weight: bold;
+  line-height: 150%;
+  align-content: center;
+  margin-bottom: 20rpx;
+  
+}
+
+.q {
+  font-size: 24rpx;
+  font-weight: bold;
+  line-height: 150%;
+
+}
+
+.option_container {
+  width: 100%;
+  height: 48%;
+}
+
+.option {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.option_icon_container {
+  width: 42rpx;
+  height: 40rpx;
+}
+
+.option_icon {
+  width: 42rpx;
+  height: 40rpx;
+}
+
+.option_ans_container {
+  width: 345rpx;
+  height: 80rpx;
+  overflow: auto;
+}
+
+.option_ans {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  font-weight: bold;
+  line-height: 150%;
+}
+
+.ques_index {
+  width: 509rpx;
+  height: 11.270718%;
+  margin-left: 15rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #542c19;
+}
+
+.index {
+  font-weight: bold;
+  font-size: 40rpx;
+  margin-top: 24rpx;
+}
+
+.time_container {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  pointer-events: none;
+  top: 30rpx;
+}
+
+.time {
+  height:100rpx;
+  width: 100rpx;
+  background-color: white;
+  pointer-events: auto;
+  border-radius: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.9;
+  color: #666;
+  font-size: 32rpx;
+  font-weight: bold;
+}

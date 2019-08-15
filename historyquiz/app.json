@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/challenge/challenge",
+    "pages/level/1/1",
+    "pages/rank/rank",
+    "pages/level/5/5",
+    "pages/index/index",
+    "pages/level/level",
+    "pages/level/2/2",
+    "pages/level/3/3",
+    "pages/level/4/4",
+    "pages/challenge/challengelevel/challengelevel",
+    "pages/gift/gift",
+    "pages/apply/apply"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#D82C29",
+    "navigationBarTitleText": "校史答题",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}

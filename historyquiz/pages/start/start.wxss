@@ -1,0 +1,75 @@
+/* pages/start/start.wxss */
+
+.container {
+  width: 750rpx;
+  height: 100%;
+  position: absolute;
+}
+
+.logo_container {
+  width: 750rpx;
+  height: 27%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 251rpx;
+  height: 219rpx;
+}
+
+.introduction_container {
+  width: 750rpx;
+  height: 50%;
+  margin-top:400rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.introduction {
+  width: 471rpx;
+  position: relative;
+  left: -25rpx;
+  height: 97%;
+  background-color: white;
+  box-shadow: 29rpx 29rpx #B3B3B3;
+  box-sizing: border-box;
+  font-size: 26rpx;
+  padding: 40rpx;
+  line-height: 150%;
+  overflow: auto;
+}
+
+.login_container {
+  width: 750rpx;
+  height: 16%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button_container {
+  width: 300rpx;
+  height: 79rpx;
+  box-sizing: border-box;
+  padding: 0;
+  overflow: hidden;
+}
+
+.button_image {
+  width: 300rpx;
+  height: 79rpx;
+  margin: 0;
+}
+
+.button {
+  width: 320rpx;
+  height: 90rpx;
+  top: -92rpx;
+  left: -10rpx;
+  box-sizing: border-box;
+  background-color:  rgba(0, 0, 0, 0);
+  border-color: #E6E6E6;
+  border: none;
+}

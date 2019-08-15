@@ -1,0 +1,219 @@
+<!--pages/mission/1/1.wxml-->
+<view class='container' bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+  <image style='width:750rpx;height:100%;z-index:-3; position:absolute; left:0; top:0; ' src='../../../images/bg.jpg'></image>
+
+  <view class='tips_container' hidden='{{tips_hidden}}'>
+    <view class='tips'>上拉或下滑进行切换题目</view>
+  </view>
+  <view class='top_padding'></view>
+  <view class='box_container' wx:for="{{question}}" style='{{switch_style}}'>
+    <!-- 单选 -->
+    <view wx:if="{{item.type == '1'}}" class='ques_container'>
+      <view class='ques'>
+        <view class='q_container'>
+          <view class='qtitle'>单项选择题</view>
+          <view class='q'>{{item.q}}</view>
+        </view>
+        <view class='option_container'>
+          <view class='option' bindtap='choose' data-option='A' data-index='{{item.index}}'>
+            <view class='option_icon_container'>
+              <image class='option_icon' src='{{item.a_icon}}'></image>
+            </view>
+            <view class='option_ans_container'>
+              <view class='option_ans'>{{item.a}}</view>
+            </view>
+          </view>
+          <view class='option' bindtap='choose' data-option='B' data-index='{{item.index}}'>
+            <view class='option_icon_container'>
+              <image class='option_icon' src='{{item.b_icon}}'></image>
+            </view>
+            <view class='option_ans_container'>
+              <view class='option_ans'>{{item.b}}</view>
+            </view>
+          </view>
+          <view class='option' bindtap='choose' data-option='C' data-index='{{item.index}}'>
+            <view class='option_icon_container'>
+              <image class='option_icon' src='{{item.c_icon}}'></image>
+            </view>
+            <view class='option_ans_container'>
+              <view class='option_ans'>{{item.c}}</view>
+            </view>
+          </view>
+          <view class='option' bindtap='choose' data-option='D' data-index='{{item.index}}'>
+            <view class='option_icon_container'>
+              <image class='option_icon' src='{{item.d_icon}}'></image>
+            </view>
+            <view class='option_ans_container'>
+              <view class='option_ans'>{{item.d}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='ques_index'>
+        <view class='index'>{{item.index + 1}}/{{question_num}}</view>
+      </view>
+    </view>
+
+    <!-- 五项多选 -->
+    <view wx:elif="{{item.type == '2'}}" class='ques_container'>
+      <view class='ques'>
+        <view class='q_container'>
+          <view class='qtitle'>多项选择题</view>
+          <view class='q'>{{item.q}}</view>
+        </view>
+        <view class='option_container'>
+          <view class='option' bindtap='fivechoose' data-option='A' data-index='{{item.index}}'>
+            <view class='option_icon_container'>
+              <image class='option_icon' src='{{item.a_icon}}'></image>
+            </view>
+            <view class='option_ans_container'>
+              <view class='option_ans'>{{item.a}}</view>
+            </view>
+          </view>
+          <view class='option' bindtap='fivechoose' data-option='B' data-index='{{item.index}}'>
+            <view class='option_icon_container'>
+              <image class='option_icon' src='{{item.b_icon}}'></image>
+            </view>
+            <view class='option_ans_container'>
+              <view class='option_ans'>{{item.b}}</view>
+            </view>
+          </view>
+          <view class='option' bindtap='fivechoose' data-option='C' data-index='{{item.index}}'>
+            <view class='option_icon_container'>
+              <image class='option_icon' src='{{item.c_icon}}'></image>
+            </view>
+            <view class='option_ans_container'>
+              <view class='option_ans'>{{item.c}}</view>
+            </view>
+          </view>
+          <view class='option' bindtap='fivechoose' data-option='D' data-index='{{item.index}}'>
+            <view class='option_icon_container'>
+              <image class='option_icon' src='{{item.d_icon}}'></image>
+            </view>
+            <view class='option_ans_container'>
+              <view class='option_ans'>{{item.d}}</view>
+            </view>
+          </view>
+          <view class='option' bindtap='fivechoose' data-option='E' data-index='{{item.index}}'>
+            <view class='option_icon_container'>
+              <image class='option_icon' src='{{item.e_icon}}'></image>
+            </view>
+            <view class='option_ans_container'>
+              <view class='option_ans'>{{item.e}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='ques_index'>
+        <view class='index'>{{item.index + 1}}/{{question_num}}</view>
+      </view>
+    </view>
+    <!-- 四项多选 -->
+    <view wx:elif="{{item.type == '3'}}" class='ques_container'>
+      <view class='ques'>
+        <view class='q_container'>
+          <view class='qtitle'>多项选择题</view>
+          <view class='q'>{{item.q}}</view>
+        </view>
+        <view class='option_container'>
+          <view class='option' bindtap='fourchoose' data-option='A' data-index='{{item.index}}'>
+            <view class='option_icon_container'>
+              <image class='option_icon' src='{{item.a_icon}}'></image>
+            </view>
+            <view class='option_ans_container'>
+              <view class='option_ans'>{{item.a}}</view>
+            </view>
+          </view>
+          <view class='option' bindtap='fourchoose' data-option='B' data-index='{{item.index}}'>
+            <view class='option_icon_container'>
+              <image class='option_icon' src='{{item.b_icon}}'></image>
+            </view>
+            <view class='option_ans_container'>
+              <view class='option_ans'>{{item.b}}</view>
+            </view>
+          </view>
+          <view class='option' bindtap='fourchoose' data-option='C' data-index='{{item.index}}'>
+            <view class='option_icon_container'>
+              <image class='option_icon' src='{{item.c_icon}}'></image>
+            </view>
+            <view class='option_ans_container'>
+              <view class='option_ans'>{{item.c}}</view>
+            </view>
+          </view>
+          <view class='option' bindtap='fourchoose' data-option='D' data-index='{{item.index}}'>
+            <view class='option_icon_container'>
+              <image class='option_icon' src='{{item.d_icon}}'></image>
+            </view>
+            <view class='option_ans_container'>
+              <view class='option_ans'>{{item.d}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='ques_index'>
+        <view class='index'>{{item.index + 1}}/{{question_num}}</view>
+      </view>
+    </view>
+    <!-- 判断 -->
+    <view wx:elif="{{item.type == '4'}}" class='ques_container'>
+      <view class='ques'>
+        <view class='q_container'>
+          <view class='qtitle'>判断题</view>
+          <view class='q'>{{item.q}}</view>
+        </view>
+        <view class='option_container'>
+          <view class='option' bindtap='judgechoose' data-option='t' data-index='{{item.index}}'>
+            <view class='option_icon_container'>
+              <image class='option_icon' src='{{item.t_icon}}'></image>
+            </view>
+            <view class='option_ans_container'>
+              <view class='option_ans'>{{item.t}}</view>
+            </view>
+          </view>
+          <view class='option' bindtap='judgechoose' data-option='f' data-index='{{item.index}}'>
+            <view class='option_icon_container'>
+              <image class='option_icon' src='{{item.f_icon}}'></image>
+            </view>
+            <view class='option_ans_container'>
+              <view class='option_ans'>{{item.f}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='ques_index'>
+        <view class='index'>{{item.index + 1}}/{{question_num}}</view>
+      </view>
+    </view>
+    <!-- 填空 -->
+    <view wx:elif="{{item.type == '5'}}" class='ques_container'>
+      <view class='ques'>
+        <view class='q_container'>
+          <view class='qtitle'>填空题</view>
+          <view class='q'>{{item.q}}</view>
+        </view>
+        <view class='option_container'>
+          <view class='option'  data-index='{{item.index}}'>
+            <input bindinput="inputvalue" style='background:#A19287' placeholder='在此处作答' data-index='{{item.index}}'></input>
+          </view>
+        </view>
+      </view>
+      <view class='ques_index'>
+        <view class='index'>{{item.index + 1}}/{{question_num}}</view>
+      </view>
+    </view>
+
+
+
+
+  </view>
+  <view class='bottom_padding'></view>
+  <view class='submit_button_container' hidden='{{submit_hidden}}'>
+    <image class='submit_button' src='/images/13.png' bindtap='submit'></image>
+  </view>
+</view>
+
+<movable-area class="time_container">
+  <movable-view class='time' direction="all" inertia="true">
+    <view>{{time}}s</view>
+  </movable-view>
+</movable-area>

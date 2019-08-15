@@ -1,0 +1,220 @@
+/* pages/mission/mission.wxss */
+
+.container {
+  width: 750rpx;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 34rpx 35rpx;
+  position: absolute;
+}
+
+
+.logo_container {
+  margin-top:70rpx;
+  margin-bottom: 20rpx;
+  width: 750rpx;
+  height: 27%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 251rpx;
+  height: 219rpx;
+}
+
+.level_container {
+  height: 100%;
+  width: 100%;
+  margin-top:200rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.level_hd_container {
+  width: 577rpx;
+  height: 17.917266%;
+}
+
+.person {
+  width: 577rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hd_background {
+  display: block;
+  width: 577rpx;
+  height: 117rpx;
+}
+
+.person_info {
+  width: 577rpx;
+  height: 106rpx;
+  position: absolute;
+}
+
+.avatar_container {
+  width: 93rpx;
+  height: 93rpx;
+  position: absolute;
+  top: 14rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  display: block;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+}
+
+.nick_name_container {
+  width: 375rpx;
+  height: 93rpx;
+  position: absolute;
+  top: 14rpx;
+  left: 185rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+
+.nick_name {
+  color: #999;
+  font-size: 36rpx;
+  font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.level_bd_container {
+  width: 577rpx;
+  height: 60.748201%;
+}
+
+.level {
+  width: 577rpx;
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.background_image {
+  display: block;
+  width: 577rpx;
+  height: 117rpx;
+  margin:auto;
+}
+
+
+.level_num {
+  width: 577rpx;
+  height: 86rpx;
+  position: absolute;
+}
+
+.level_id_container {
+  width: 70rpx;
+  height: 90rpx;
+  position: absolute;
+  top: 0rpx;
+  left: 15rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.level_id {
+  font-size: 70rpx;
+  font-weight: bold;
+}
+
+.score_container {
+  width: 270rpx;
+  height: 65rpx;
+  position: absolute;
+  top: 15rpx;
+  left: 230rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.score {
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.level_ft_container {
+  width: 575rpx;
+  height: 10.334532%;
+  margin-left:auto;
+}
+
+.other {
+  width: 575rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.count_down {
+  width: 288rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+.count_down_background {
+  display: block;
+  width: 230rpx;
+  height: 107rpx;
+}
+
+.count_down_container {
+  width: 230rpx;
+  height: 82rpx;
+  position: absolute;
+}
+
+.count_down_time_container {
+  width: 214rpx;
+  height: 68rpx;
+  position: absolute;
+  top: 0rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.count_down_time {
+  font-size: 44rpx;
+  font-weight: bold;
+  color: #999;
+}
+
+.rank_container {
+  width: 288rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.rank_image {
+  width: 230rpx;
+  height: 82rpx;
+}

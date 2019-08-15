@@ -1,0 +1,222 @@
+/* pages/rank/rank.wxss */
+
+/* pages/start/start.wxss */
+
+.container {
+  width: 750rpx;
+  height: 100%;
+position: absolute;
+}
+
+.logo_container {
+  width: 750rpx;
+  height: 27%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 255rpx;
+  height: 201rpx;
+}
+
+.introduction_container {
+  width: 750rpx;
+  height: 50%;
+  margin-top:400rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.introduction {
+  width: 472rpx;
+  position: relative;
+  left: -25rpx;
+  height: 97%;
+  background-color: #ecc255;
+  box-shadow: 29rpx 29rpx #b3b3b3;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.info_container {
+  width: 472rpx;
+  height: 80rpx;
+  position: relative;
+}
+
+.rank_container {
+  width: 55rpx;
+  height: 30rpx;
+  background: #68d2e7;
+  border-radius: 0 15rpx 15rpx 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 30rpx;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 27rpx;
+}
+
+.rank {
+  margin-right: 10rpx;
+}
+
+.avatar_container {
+  width: 55rpx;
+  height: 55rpx;
+  background: #ccc;
+  border-radius: 27.5rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 69rpx;
+  top: 14rpx;
+}
+
+.avatar {
+  width: 45rpx;
+  height: 45rpx;
+  border-radius: 22.5rpx;
+}
+
+.other_container {
+  width: 332rpx;
+  height: 60rpx;
+  box-sizing: border-box;
+  padding-left: 11rpx;
+  padding-right: 11rpx;
+  position: absolute;
+  left: 140rpx;
+  top: 12rpx;
+}
+
+.bg_image {
+  width: 310rpx;
+  height: 60rpx;
+  display: block;
+}
+
+.other {
+  position: absolute;
+  width: 310rpx;
+  height: 60rpx;
+  top: 0;
+  left: 11rpx;
+  display: flex;
+  align-items: center;
+}
+
+.nick_name_container {
+  width: 179rpx;
+}
+
+.nick_name {
+  margin-left: 20rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.right_container {
+  width: 123rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  position: relative;
+  top: 6rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.login_container {
+  width: 750rpx;
+  height: 16%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button_container {
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  width: 250rpx;
+  height: 66rpx;
+  box-sizing: border-box;
+  padding: 0;
+  overflow: hidden;
+}
+
+.button_image {
+  width: 213rpx;
+  height: 66rpx;
+  margin: 0;
+}
+
+.button {
+  width: 260rpx;
+  height: 70rpx;
+  top: -70rpx;
+  left: -10rpx;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.authbutton {
+  width: 260rpx;
+  height: 70rpx;
+  top: -70rpx;
+  left: -10rpx;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.share_container {
+  width: 750rpx;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+}
+
+.share_image_container {
+  width: 750rpx;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.share_image {
+  width: 270px;
+  height: 360px;
+  background-color: gray;
+}
+
+.save_image_container {
+  width: 750rpx;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.save_image {
+  width: 300rpx;
+  height: 79rpx;
+}
+
+.canvas_container {
+  position: fixed;
+  left: -5000rpx;
+}

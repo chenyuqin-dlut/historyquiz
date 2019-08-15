@@ -1,0 +1,91 @@
+<!-- myinfo.wxml -->
+<view style='display: flex;flex-direction:row;position: relative;height:100%'>
+  <image style='width:750rpx;height:100%;z-index:-3; position:absolute; left:0; top:0; ' src='../../images/bg.jpg'></image>
+  <image style='width:750rpx;height:392rpx;z-index:-2; position:absolute; left:0; top:0; ' src='../../images/topicon.png'></image>
+
+
+  <view class='info_container' style='margin-top:100rpx '>
+
+    <view style='justify-content:space-around;  width: 650rpx;height: 342rpx;margin-bottom: 30rpx;'>
+      <image style='width:650rpx;height:342rpx;z-index:-2; position:absolute; left:0; top:0; ' src='../../images/infoicon.png'></image>
+      <image style='position:absolute;left:61rpx;top:72rpx;width:85rpx;height:85rpx;border-radius:15rpx' src='{{avatarUrl}}'></image>
+
+      <view class='nick_name_container'>
+        <view class='nick_name'>{{nickName}}</view>
+      </view>
+
+      <view class='nick_name_container_small1'>
+        <view class='nick_name'>金币:{{coin}}</view>
+      </view>
+
+
+
+      <view class='nick_name_container_small2'>
+        <view class='nick_name'>排名:{{rank}}</view>
+      </view>
+
+    </view>
+
+    <!-- <view class='info_box info_color6 cheerstylea' bindtap='tolevel'>
+    <view class='info_icon_container'>
+      <image src='../../images/level.png' class='info_icon'></image>
+    </view>
+    <view class='info_content_container'>
+      <view class='direct_text'>闯关模式</view>
+    </view>
+  </view> -->
+
+    <view style=' width: 305rpx;height: 305rpx;margin-bottom: 30rpx;' bindtap='tolevel'>
+      <image src="../../images/levelicon.png" style='width: 305rpx;height: 305rpx;'></image>
+    </view>
+
+    <view style=' width: 305rpx;height: 305rpx;margin-bottom: 30rpx;' bindtap='tochallenge'>
+      <image src="../../images/challengeicon.png" style='width: 305rpx;height: 305rpx;'></image>
+    </view>
+    <view style=' width: 305rpx;height: 305rpx;margin-bottom: 30rpx;' bindtap='torank'>
+      <image src="../../images/rankicon.png" style='width: 305rpx;height: 305rpx;'></image>
+    </view>
+    <view style=' width: 305rpx;height: 305rpx;margin-bottom: 30rpx;' bindtap='togift'>
+      <image src="../../images/gifticon.png" style='width: 305rpx;height: 305rpx;'></image>
+    </view>
+
+    <!-- 
+  <view class='info_box info_color3 cheerstyleb' bindtap='tochallenge'>
+    <view class='info_icon_container'>
+      <image src='../../images/torank.png' class='info_icon'></image>
+    </view>
+    <view class='info_content_container'>
+      <view class='info_content_container'>
+        <view class='direct_text'>挑战模式</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='info_box info_color4 cheerstylec' bindtap='torank'>
+    <view class='info_icon_container'>
+      <image src='../../images/notice.png' class='info_icon'></image>
+
+    </view>
+    <view class='info_content_container'>
+      <view class='info_content_container'>
+        <view class='direct_text'>排行榜</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='info_box info_color1 cheerstyled' bindtap='togift'>
+    <view class='info_icon_container'>
+      <image src='../../images/gift.png' class='info_icon'></image>
+
+    </view>
+    <view class='info_content_container'>
+      <view class='info_content_container'>
+        <view class='direct_text'>领奖说明</view>
+      </view>
+    </view>
+  </view> -->
+
+  </view>
+
+  <image style='width:750rpx;height:216rpx;z-index:-2; position:absolute; left:0; bottom:0; ' src='../../images/bottomicon.png'></image>
+</view>

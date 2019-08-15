@@ -1,0 +1,17 @@
+<!--pages/start/start.wxml-->
+<view class='container'>
+  <image style='width:750rpx;height:100%;z-index:-3; position:absolute; left:0; top:0; ' src='../../images/bg.jpg'></image>
+  <image style='width:750rpx;height:393rpx;z-index:-2; position:absolute; left:0; top:0; ' src='../../images/starticon.png'></image>
+
+  <view class='introduction_container'>
+    <view class='introduction'>
+      <text style='font-size:35rpx'>{{intro}}</text>
+    </view>
+  </view>
+  <view class='login_container'>
+    <view class='button_container'>
+      <image class='button_image' src='/images/18.png'></image>
+      <button bindtap='toapply' class='button'></button>
+    </view>
+  </view>
+</view>

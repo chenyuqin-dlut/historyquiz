@@ -1,0 +1,63 @@
+<!--pages/mission/1/1.wxml-->
+<form  bindsubmit="formSubmit">
+<view class='container'>
+  <image style='width:750rpx;height:100%;z-index:-3; position:absolute; left:0; top:0; ' src='../../images/bg.jpg'></image>
+
+  <view class='top_padding'></view>
+  <view class='box_container'>
+
+    <!-- 填空 -->
+    <view class='ques_container'>
+      <view class='ques'>
+        <view class='q_container'>
+          <view class='qtitle'>请填写您的报名信息</view>
+          <view class='q'>{{item.q}}</view>
+        </view>
+        <view class='option_container'>
+          <view class='option'>
+            <view style='width:120rpx;font-size:35rpx;'>姓名</view>
+            <input style='background:#A19287' name="name"></input>
+          </view>
+          <view class='option'>
+            <view style='width:180rpx;font-size:35rpx;'>政治面貌</view>
+            <picker name="public" bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}" style='background:#A19287;height:1.4rem;width:250rpx'>
+              <view class="picker">
+                {{array1[index1]}}
+              </view>
+            </picker>
+
+          </view>
+          <view class='option'>
+            <view style='width:120rpx;font-size:35rpx;'>身份</view>
+            <picker name="identity"  bindchange="bindPickerChange2" value="{{index2}}" range="{{array2}}" style='background:#A19287;height:1.4rem;width:320rpx'>
+              <view class="picker">
+                {{array2[index2]}}
+              </view>
+            </picker>
+
+          </view>
+
+          <view class='option'>
+            <view style='width:120rpx;font-size:35rpx;'>院系</view>
+            <input name="faculty" style='background:#A19287' ></input>
+          </view>
+          <view class='option'>
+            <view style='width:230rpx;font-size:35rpx;'>联系电话</view>
+            <input name="phone"  style='background:#A19287' type ='number'></input>
+          </view>
+
+        </view>
+      </view>
+      <view class='ques_index'>
+        <view class='index'>祝您取得好成绩</view>
+      </view>
+    </view>
+
+  </view>
+  <view class='bottom_padding'></view>
+  <view class='submit_button_container'>
+    <button type="warn" form-type="submit" style='width：400rpx;height:75rpx' >提交</button>
+  </view>
+</view>
+
+</form>

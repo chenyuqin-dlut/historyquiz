@@ -1,0 +1,71 @@
+<!--pages/rank/rank.wxml-->
+<!--pages/start/start.wxml-->
+<view class='container'>
+  <image style='width:750rpx;height:100%;z-index:-3; position:absolute; left:0; top:0; ' src='../../images/bg.jpg'></image>
+  <image style='width:750rpx;height:393rpx;z-index:-2; position:absolute; left:0; top:0; ' src='../../images/rank.png'></image>
+
+  <view class='introduction_container'>
+    <view class='introduction'>
+      <view class='info_container' style='background: #dd2525'>
+        <view class='rank_container'>
+          <view class='rank'>{{rank_my.rank + 1}}</view>
+        </view>
+        <view class='avatar_container'>
+          <image class='avatar' src='{{rank_my.avatar_url}}'></image>
+        </view>
+        <view class='other_container'>
+          <image class='bg_image' src='/images/14.png'></image>
+          <view class='other'>
+            <view class='nick_name_container'>
+              <view class='nick_name'>{{rank_my.nick_name}}</view>
+            </view>
+            <view class='right_container'>
+              <view class='right'>{{rank_my.right}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='info_container' wx:for="{{rank_all}}">
+        <view class='rank_container' style='background: {{item.color}}'>
+          <view class='rank'>{{item.rank+1}}</view>
+        </view>
+        <view class='avatar_container'>
+          <image class='avatar' src='{{item.avatar_url}}'></image>
+        </view>
+        <view class='other_container'>
+          <image class='bg_image' src='/images/14.png'></image>
+          <view class='other'>
+            <view class='nick_name_container'>
+              <view class='nick_name'>{{item.nick_name}}</view>
+            </view>
+            <view class='right_container'>
+              <view class='right'>{{item.right}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='login_container'>
+    <view class='button_container'>
+      <image class='button_image' src='/images/share.png'></image>
+      <button class='button' open-type='share'></button>
+    </view>
+
+  </view>
+  <image style='width:750rpx;height:216rpx;z-index:-2; position:absolute; left:0; bottom:0; ' src='../../images/bottomicon.png'></image>
+</view>
+
+<view class='share_container' hidden='{{share_hidden}}'>
+  <view class='share_image_container'>
+    <image class='share_image' src='{{shareImgSrc}}'></image>
+  </view>
+  <view class='save_image_container'>
+    <image class='save_image' src='/images/16.png' bindtap='saveImage' hidden='{{saveImgBtnHidden}}'></image>
+    <button type='warn'  open-type="openSetting" bindopensetting='handleSetting' hidden='{{openSettingBtnHidden}}'>保存到相册前请授权</button>
+  </view>
+</view>
+
+<view class='canvas_container'>
+  <canvas style="width: 1080px; height: 1440px;" canvas-id="myCanvas"></canvas>
+</view>

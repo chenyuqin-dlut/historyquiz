@@ -1,0 +1,68 @@
+<!--pages/level/level.wxml-->
+<view class='container'>
+  <image style='width:750rpx;height:100%;z-index:-3; position:absolute; left:0; top:0; ' src='../../images/bg.jpg'></image>
+  <image style='width:750rpx;height:393rpx;z-index:-2; position:absolute; left:0; top:0; ' src='../../images/topicon.png'></image>
+
+  <view class='level_container'>
+    <!-- <view class='level_hd_container'>
+      <view class='person'>
+        <image class='hd_background' src='/images/8.png'></image>
+        <view class='person_info'>
+          <view class='avatar_container'>
+            <image class='avatar' src='{{avatarUrl}}'></image>
+          </view>
+          <view class='nick_name_container'>
+            <view class='nick_name'>{{nickName}}</view>
+          </view>
+        </view>
+      </view>
+    </view> -->
+
+    <view class='level_bd_container' style='margin-top:45rpx'>
+      <view class='level' bindtap='startLevel' wx:for="{{level}}" data-level_id='{{item.level_id}}' data-level_state='{{item.level_state}}' data-level_opacity='{{item.level_opacity}}' style='opacity: {{item.level_opacity}}'>
+        <image class='background_image' src='{{item.level_image}}'></image>
+        <view class='level_num'>
+          <view class='level_id_container'>
+            <view class='level_id' style='color:{{item.level_level_color}}'>{{item.level_id + 1}}</view>
+          </view>
+          <view class='score_container'>
+            <view class='score' style='color:{{item.level_right_color}}'>{{item.level_right}}/{{item.level_all}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class='level_ft_container'>
+      <view class='other'>
+        <view class='count_down'>
+          <image class='count_down_background' src='/images/timeicon.png'></image>
+          <view class='count_down_container'>
+            <view class='count_down_time_container'>
+              <view class='count_down_time'>
+                {{next_h}}:{{next_m}}:{{next_s}}
+              </view>
+
+            </view>
+          </view>
+        </view>
+
+        <view class='rank_container'>
+          <navigator class='count_down' url='/pages/rank/rank'>
+            <image class='count_down_background' src='/images/timeicon.png'>
+            </image>
+          <view class='count_down_container'>
+            <view class='count_down_time_container'>
+              <view class='count_down_time' style='color:#D82717'>
+                排行榜
+              </view>
+
+            </view>
+          </view>
+
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+  <image style='width:750rpx;height:216rpx;z-index:-2; position:absolute; left:0; bottom:0; ' src='../../images/bottomicon.png'></image>
+</view>
