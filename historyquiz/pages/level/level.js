@@ -1,4 +1,9 @@
 // pages/level/level.js
+const URL_info = require('../../config').URL_info;
+const URL_time = require('../../config').URL_time;
+const URL_login = require('../../config').URL_login;
+
+
 Page({
 
   /**
@@ -195,7 +200,7 @@ Page({
           if (openid) {
             //console.log(openid);
             wx.request({
-              url: 'https://dutcmc.com/mp/xiaoshi/backstage/1.0/info.php',
+              url: URL_info,
               data: {
                 avatarUrl: avatarUrl,
                 nickName: nickName,
@@ -263,7 +268,7 @@ Page({
       if (openid) {
         //console.log(openid);
         wx.request({
-          url: 'https://dutcmc.com/mp/xiaoshi/backstage/1.0/time.php',
+          url: URL_time,
           data: {
             openid: openid,
             time_type: 'get',
@@ -342,7 +347,7 @@ Page({
       if (openid) {
         //console.log(openid);
         wx.request({
-          url: 'https://dutcmc.com/mp/xiaoshi/backstage/1.0/time.php',
+          url: URL_time,
           data: {
             openid: openid,
             time_type: 'write',
@@ -574,7 +579,7 @@ Page({
               //console.log(res.code);
               //发起网络请求
               wx.request({//详细用法看小程序简易教程
-                url: 'https://dutcmc.com/mp/xiaoshi/backstage/1.0/login.php',
+                url: URL_login,
                 data: {
                   code: res.code
                 },

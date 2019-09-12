@@ -1,4 +1,9 @@
 // pages/start/start.js
+
+const URL_start = require('../../config').URL_start;
+const URL_get_intro = require('../../config').URL_get_intro;
+
+
 Page({
 
   /**
@@ -89,9 +94,10 @@ Page({
     console.log(e);
     if (e.detail.errMsg == "getUserInfo:ok") {
       wx.request({
-        url: 'https://dutcmc.com/mp/xiaoshi/backstage/1.0/start.php',
+        url: URL_start,
         data: '',
         success: function (res) {
+          console.log(res.data)
           if (res.data == 1) {
             wx.setStorage({//将用户信息缓存起来，下次调用
               key: "userInfo",
@@ -115,6 +121,8 @@ Page({
                 }
               }
             })
+
+ 
           }
         },
         fail: function (res) { },
@@ -206,7 +214,7 @@ Page({
   getIntro: function () {
     var that = this;
     wx.request({
-      url: 'https://dutcmc.com/mp/xiaoshi/backstage/1.0/get_intro.php',
+      url: URL_get_intro,
       data: '',
       success: function (res) {
         var intro = res.data;

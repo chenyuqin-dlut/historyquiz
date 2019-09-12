@@ -1,4 +1,7 @@
 // pages/start/start.js
+const URL_get_intro = require('../../config').URL_get_intro;
+
+
 Page({
 
   /**
@@ -158,7 +161,7 @@ Page({
   getIntro: function () {
     var that = this;
     wx.request({
-      url: 'https://dutcmc.com/mp/xiaoshi/backstage/1.0/get_intro.php',
+      url: URL_get_intro,
       data: '',
       success: function (res) {
         var intro = res.data;

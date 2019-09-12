@@ -1,4 +1,7 @@
 // pages/rank/rank.js
+const URL_new_rank = require('../../config').URL_new_rank;
+
+
 Page({
 
   /**
@@ -96,11 +99,12 @@ Page({
     var that = this;
     var openid = wx.getStorageSync('openid')
     wx.request({
-      url: 'https://dutcmc.com/mp/xiaoshi/backstage/1.0/rank1.php',
+      url: URL_new_rank,
       data: {
         openid: openid
       },
       success: function (res) {
+        console.log(res)
         var rank_all = res.data.rank_all;
         var rank_my = res.data.rank_my;
         that.setData({

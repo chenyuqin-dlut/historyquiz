@@ -1,4 +1,13 @@
 // pages/level/level.js
+const URL_start = require('../../config').URL_start;
+const URL_get_intro = require('../../config').URL_get_intro;
+const URL_new_rank = require('../../config').URL_new_rank;
+const URL_info = require('../../config').URL_info;
+const URL_time = require('../../config').URL_time;
+const URL_login = require('../../config').URL_login;
+const URL_getcoin = require('../../config').URL_getcoin;
+const URL_challengechance = require('../../config').URL_challengechance;
+
 Page({
 
   /**
@@ -86,7 +95,7 @@ Page({
     var that = this
     var openid = wx.getStorageSync('openid')
     wx.request({
-      url: 'https://dutcmc.com/mp/xiaoshi/backstage/1.0/challengechance.php',
+      url: URL_challengechance,
       data: {
         type: 'qu',
         openid: openid,
@@ -186,7 +195,7 @@ Page({
             // that.writeTime();
             var openid = wx.getStorageSync('openid')
             wx.request({
-              url: 'https://dutcmc.com/mp/xiaoshi/backstage/1.0/challengechance.php',
+              url: URL_challengechance,
               data: {
                 type:'de',
                 openid: openid,
@@ -223,7 +232,7 @@ Page({
           if (openid) {
             //console.log(openid);
             wx.request({
-              url: 'https://dutcmc.com/mp/xiaoshi/backstage/1.0/info.php',
+              url: URL_info,
               data: {
                 avatarUrl: avatarUrl,
                 nickName: nickName,
@@ -291,7 +300,7 @@ Page({
       if (openid) {
         //console.log(openid);
         wx.request({
-          url: 'https://dutcmc.com/mp/xiaoshi/backstage/1.0/time.php',
+          url: URL_time,
           data: {
             openid: openid,
             time_type: 'get',
@@ -370,7 +379,7 @@ Page({
       if (openid) {
         //console.log(openid);
         wx.request({
-          url: 'https://dutcmc.com/mp/xiaoshi/backstage/1.0/time.php',
+          url: URL_time,
           data: {
             openid: openid,
             time_type: 'write',
@@ -612,7 +621,7 @@ Page({
               //console.log(res.code);
               //发起网络请求
               wx.request({ //详细用法看小程序简易教程
-                url: 'https://dutcmc.com/mp/xiaoshi/backstage/1.0/login.php',
+                url: URL_login,
                 data: {
                   code: res.code
                 },

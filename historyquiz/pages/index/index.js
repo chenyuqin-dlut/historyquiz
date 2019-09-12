@@ -1,4 +1,7 @@
 // pages/index/index.js
+const URL_getcoin = require('../../config').URL_getcoin;
+
+
 Page({
 
   /**
@@ -71,7 +74,7 @@ Page({
       success: function (res) {
         console.log(res.data)
         wx.request({
-          url: 'https://dutcmc.com/mp/xiaoshi/backstage/1.0/getcoin.php',
+          url: URL_getcoin,
           data: {
             openid: res.data
           },

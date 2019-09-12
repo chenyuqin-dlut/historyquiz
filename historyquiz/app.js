@@ -1,4 +1,7 @@
 //app.js
+const URL_get_ques = require('config').URL_get_ques;
+const URL_login = require('config').URL_login;
+
 
 var util = require("utils/util.js")
 
@@ -53,7 +56,7 @@ console.log(options);
   getQues: function () {
     var that = this;
     wx.request({
-      url: 'https://dutcmc.com/mp/xiaoshi/backstage/1.0/get_ques.php',
+      url: URL_get_ques,
       data: {},
       success: function (res) {
         console.log(res.data);
@@ -91,9 +94,10 @@ console.log(options);
         wx.login({
           success: function (res) {
             if (res.code) {
+              console.log(res.code)
               //发起网络请求
               wx.request({//详细用法看小程序简易教程
-                url: 'https://dutcmc.com/mp/xiaoshi/backstage/1.0/login.php',
+                url: URL_login,
                 data: {
                   code: res.code
                 },

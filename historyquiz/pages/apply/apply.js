@@ -1,4 +1,6 @@
 // pages/mission/1/1.js
+const URL_apply = require('../../config').URL_apply;
+
 var touchDot = 0; //触摸时的原点
 var time = 0; //  时间记录，用于滑动时且时间小于1s则执行左右滑动
 var interval = ""; // 记录/清理 时间记录
@@ -108,7 +110,7 @@ Page({
         if (res.confirm) {
           var openid = wx.getStorageSync('openid');
           wx.request({
-            url: 'https://dutcmc.com/mp/xiaoshi/backstage/1.0/apply.php',
+            url: URL_apply,
             data:({
               openid:openid,
               faculty:e.detail.value.faculty,
